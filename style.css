@@ -219,19 +219,26 @@ section {
 
 .portfolio-card {
     width: 400px;
-    height: 530px;
+    height: 550px;
     margin: 2rem 0;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .portfolio-card h3 {
-    margin: 1rem 0.5rem;
+    padding: 1rem 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    color: white;
+    background: #515e5e;
 }
 
 .portfolio-card-wrapper {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    height: 90%;
 }
 
 .portfolio-card-wrapper>div:first-child {
@@ -253,7 +260,7 @@ section {
     text-align: center;
 }
 
-.portfolio-card-wrapper>div:last-child>button {
+.portfolio-card-wrapper>div:last-child button {
     margin: 0 0.5rem  0.5rem 0.5rem;
 }
 
