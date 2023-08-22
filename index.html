@@ -13,20 +13,20 @@
 
 <body>
   <nav>
-    <div id="logo">&lt PZ &gt</div>
+    <div id="logo" class="lang" key="LOGO">&lt PZ &gt</div>
     <ul>
-      <li><a href="#">Kezdőlap</a></li>
-      <li><a href="#about">Rólam</a></li>
-      <li><a href="#portfolio">Munkáim</a></li>
-      <li><a href="#contact">Kapcsolat</a></li>
+      <li><a class="lang" key="HOME_NAV" href="#">Kezdőlap</a></li>
+      <li><a class="lang" key="ABOUT_NAV" href="#about">Rólam</a></li>
+      <li><a class="lang" key="WORKS_NAV" href="#portfolio">Munkáim</a></li>
+      <li><a class="lang" key="CONTACT_NAV" href="#contact">Kapcsolat</a></li>
     </ul>
     <div id="mobile-menu">
       <img src="./img/hamburger50.png" width="40px" alt="mobile-menu icon">
       <div id="mobile-menu-items">
-        <div><a href="#">Kezdőlap</a></div>
-        <div><a href="#about">Rólam</a></div>
-        <div><a href="#portfolio">Munkáim</a></div>
-        <div><a href="#contact">Kapcsolat</a></div>
+        <div><a class="lang" key="HOME_NAV" href="#">Kezdőlap</a></div>
+        <div><a class="lang" key="ABOUT_NAV" href="#about">Rólam</a></div>
+        <div><a class="lang" key="WORKS_NAV" href="#portfolio">Munkáim</a></div>
+        <div><a class="lang" key="CONTACT_NAV" href="#contact">Kapcsolat</a></div>
       </div>
     </div>
 
@@ -37,19 +37,22 @@
         <img src="./img/pz.jpg" width="300px" alt="profile picture">
       </div>
       <div>
-        <h1>Üdvözlöm!</h1>
-        <h2>Parragi Zoltán vagyok, full-stack web fejlesztő.</h2>
-        <h2>Bagodban, Zalaegerszeg mellett lakom.</h2>
-        <button><a href="#about">A legfontosabbak rólam</a></button>
+        <h1 class="lang" key="HEADER_GREETING">Üdvözlöm!</h1>
+        <h2 class="lang" key="HEADER_TEXT1">Parragi Zoltán vagyok, full-stack web fejlesztő.</h2>
+        <h2 class="lang" key="HEADER_TEXT2">Bagodban, Zalaegerszeg mellett lakom.</h2>
+        <button><a class="lang" key="HEADER_BUTTON" href="#about">A legfontosabbak rólam</a></button>
       </div>
+    </div>
+    <div id="languageChoice">
+      English
     </div>
   </header>
   <main>
     <section id="about">
       <div class="section-wrapper">
-        <h2>Rólam</h2>
+        <h2 class="lang" key="ABOUT_ABOUT">Rólam</h2>
 
-        <h3>Web fejlesztő készségek</h3>
+        <h3 class="lang" key="ABOUT_SKILLS">Web fejlesztő készségek</h3>
         <div id="skill-card-wrapper">
           <div class="skill-card">
             <div><img src="./img/html.png" width="96px" alt="html"></div>
@@ -92,59 +95,80 @@
             <div>Git</div>
           </div>
         </div>
-        <p>A <a href="#portfolio">munkáimban</a> látható hogyan használom a készségeimet a gyakorlatban.</p>
-        <h3>3 random dolog rólam</h3>
+        <p class="lang" key="ABOUT_WORKS">A <a href='#portfolio'>munkáimban</a> látható hogyan használom a készségeimet
+          a gyakorlatban.</p>
+        <h3 class="lang" key="ABOUT_3THINGS">3 random dolog rólam</h3>
         <ul>
-          <li>Matematika tanárként dolgoztam több mint 20 évig. Nem ijedek meg az intellektuális kihívásoktól.</li>
-          <li>Szívesen tanulok és szívesen segítek másokat az előre haladásban.</li>
-          <li>Kedvenc dolgaim: család, gitározás, ... , a programozás is gyönyörködtet. </li>
+          <li class="lang" key="ABOUT_THING1">Matematika tanárként dolgoztam több mint 20 évig. Nem ijedek meg a
+            megoldandó problémáktól.</li>
+          <li class="lang" key="ABOUT_THING2">Szívesen tanulok és szívesen segítek másokat az előre haladásban.</li>
+          <li class="lang" key="ABOUT_THING3">Kedvenc dolgaim: család, gitározás, ... , a programozás is gyönyörködtet.
+          </li>
         </ul>
-        <a href="./ParragiZoltan_Resume.pdf" target="_blank"><button>Önéletrajzom</button></a>
+        <div id="cvButtons">
+          <a href="./ParragiZoltan_Resume.pdf" target="_blank"><button class="lang"
+              key="ABOUT_CVBUTTON_HU">Önéletrajzom (HU)</button></a>
+          <a href="./ZoltanParragiResume.pdf" target="_blank"><button class="lang"
+              key="ABOUT_CVBUTTON_EN">Önéletrajzom (EN)</button></a>
+        </div>
       </div>
     </section>
 
     <section id="portfolio">
       <div class="section-wrapper">
-        <h2>Munkáim</h2>
+        <h2 class="lang" key="PORTFOLIO_TITLE">Munkáim</h2>
         <div>
 
           <div class="portfolio-card">
-            <h3>Portfólió oldal</h3>
+            <h3 class="lang" key="PORTFOLIO_SITE_TITLE">Portfólió oldal</h3>
             <div class="portfolio-card-wrapper">
               <div>
                 <div><img src="./img/portfolio-page.jpg" width="400px" alt="portfolio page image"></div>
-                <p>Az oldal célja egy rövid bemutatkozás. HTML, CSS és JavaScript használatával készült.</p>
-                <p><a href="https://github.com/zoltanParragi/Portfolio/blob/master/README.md" target="_blank">további részletek ...</a></p>
+                <p class="lang" key="PORTFOLIO_SITE_DESCRIPTION">Az oldal célja egy rövid bemutatkozás. HTML, CSS és
+                  JavaScript használatával készült.</p>
+                <p><a href="https://github.com/zoltanParragi/Portfolio/blob/master/README.md" target="_blank"
+                    class="lang" key="PROJECT_DETAILS_LINK">további
+                    részletek ...</a></p>
               </div>
-              <div><a href="https://github.com/zoltanParragi/Portfolio" target="_blank"><button>GitHub</button></a></div>
+              <div><a href="https://github.com/zoltanParragi/Portfolio" target="_blank"><button>GitHub</button></a>
+              </div>
             </div>
           </div>
 
           <div class="portfolio-card">
-            <h3>Családi bevásárló lista</h3>
+            <h3 class="lang" key="FAMILY_SHOPPINGLIST_TITLE">Családi bevásárló lista</h3>
             <div class="portfolio-card-wrapper">
               <div>
                 <div><img src="./img/bevasarlo-oldal.jpg" width="400px" alt="image"></div>
-                <p>Natív PHP segítségével készült egyszerű bevásárló lista alklamazás.</p>
-                <p><a href="https://github.com/zoltanParragi/shopping_list/blob/master/README.md" target="_blank">további részletek ...</a></p>
+                <p class="lang" key="FAMILY_SHOPPINGLIST_DESCRIPTION">Natív PHP segítségével készült egyszerű bevásárló
+                  lista alklamazás.</p>
+                <p><a href="https://github.com/zoltanParragi/shopping_list/blob/master/README.md" target="_blank"
+                    class="lang" key="PROJECT_DETAILS_LINK">további részletek ...</a></p>
               </div>
               <div>
-                <a href="https://github.com/zoltanParragi/shopping_list" target="_blank"><button>GitHub</button></a> 
-                <a href="https://www.parragizoltan.hu/bevasarlas/" target="_blank"><button>Meglátogatom</button></div></a>
+                <a href="https://github.com/zoltanParragi/shopping_list" target="_blank"><button>GitHub</button></a>
+                <a href="https://dev.parragizoltan.hu/bevasarlas/" target="_blank"><button class="lang"
+                    key="PROJECT_VISIT_BUTTON">Meglátogatom</button>
+              </div></a>
             </div>
           </div>
 
           <div class="portfolio-card">
-            <h3>Egy méhészet bemutató oldala</h3>
+            <h3 class="lang" key="BEEKEEPER_TITLE">Egy méhészet bemutató oldala</h3>
             <div class="portfolio-card-wrapper">
               <div>
                 <div><img src="./img/mehesz-oldal.jpg" width="400px" alt="image"></div>
-                <p>Itt egy képzeletbeli méhész család mutatja be a termékeit. Bootstrap, jQuery, Typed.js használatával készült.</p>
-                <p><a href="https://github.com/zoltanParragi/mehesz_oldal/blob/main/README.md" target="_blank">további részletek ...</a></p>
+                <p class="lang" key="BEEKEEPER_DESCRIPTION">Itt egy képzeletbeli méhész család mutatja be a termékeit.
+                  Bootstrap, jQuery, Typed.js használatával
+                  készült.</p>
+                <p><a href="https://github.com/zoltanParragi/mehesz_oldal/blob/main/README.md" target="_blank"
+                    class="lang" key="PROJECT_DETAILS_LINK">további
+                    részletek ...</a></p>
               </div>
               <div>
                 <a href="https://github.com/zoltanParragi/mehesz_oldal" target="_blank"><button>GitHub</button></a>
-                <a href="https://parragizoltan.hu/meheszoldal/" target="_blank"><button>Meglátogatom</button></a>
+                <a href="https://parragizoltan.hu/meheszoldal/" target="_blank"><button class="lang"
+                    key="PROJECT_VISIT_BUTTON">Meglátogatom</button></a>
               </div>
             </div>
           </div>
@@ -154,12 +178,17 @@
             <div class="portfolio-card-wrapper">
               <div>
                 <div><img src="./img/recipe-oldal.jpg" width="400px" alt="image"></div>
-                <p>Mindenkivel előfordul, hogy kifogy az ötletekből. Receptek keresése React, Redux, Redux Thunk használatával.</p>
-                <p><a href="https://github.com/zoltanParragi/recipe-app/blob/master/README.md" target="_blank">további részletek ...</a></p>
+                <p class="lang" key="RECIPES_DESCRIPTION">Mindenkivel előfordul, hogy kifogy az ötletekből. Receptek
+                  keresése React, Redux, Redux Thunk
+                  használatával.</p>
+                <p><a href="https://github.com/zoltanParragi/recipe-app/blob/master/README.md" target="_blank"
+                    class="lang" key="PROJECT_DETAILS_LINK">további
+                    részletek ...</a></p>
               </div>
               <div>
                 <a href="https://github.com/zoltanParragi/recipe-app/" target="_blank"><button>GitHub</button></a>
-                <a href="https://recipe-app-three-beta.vercel.app/" target="_blank"><button>Meglátogatom</button></a>
+                <a href="https://recipe-app-three-beta.vercel.app/" target="_blank"><button class="lang"
+                    key="PROJECT_VISIT_BUTTON">Meglátogatom</button></a>
               </div>
             </div>
           </div>
@@ -169,11 +198,17 @@
             <div class="portfolio-card-wrapper">
               <div>
                 <div><img src="./img/admin-panel.jpg" width="400px" alt="image"></div>
-                <p>Felhasználók kezelése (regisztráció, bejelentkezés, adatok módosítása, ...) Laravel és React segítségével.</p>
-                <p><a href="https://github.com/zoltanParragi/admin-panel/blob/main/README.md" target="_blank">további részletek ...</a></p>
+                <p class="lang" key="ADMIN_PANEL_DESCRIPTION">Felhasználók kezelése (regisztráció, bejelentkezés, adatok
+                  módosítása, ...) Laravel és React
+                  segítségével.</p>
+                <p><a href="https://github.com/zoltanParragi/admin-panel/blob/main/README.md" target="_blank"
+                    class="lang" key="PROJECT_DETAILS_LINK">további
+                    részletek ...</a></p>
               </div>
               <div>
-                <a href="https://github.com/zoltanParragi/admin-panel" target="_blank"><button>GitHub</button></a> 
+                <a href="https://github.com/zoltanParragi/admin-panel" target="_blank"><button>GitHub</button></a>
+                <a href="https://zoltanparragi.hu/" target="_blank"><button class="lang"
+                    key="PROJECT_VISIT_BUTTON">Meglátogatom</button></a>
               </div>
             </div>
           </div>
@@ -183,19 +218,19 @@
 
     <section id="contact" class="canvas">
       <div class="section-wrapper">
-        <h2>Kapcsolat</h2>
+        <h2 class="lang" key="CONTACT_TITLE">Kapcsolat</h2>
         <div id="form-wrapper">
           <form action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="45d74513-777c-40fb-a9b0-b4a328a391cd">
             <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-            <label for="name">Név</label>
+            <label for="name" class="lang" key="FORM_NAME">Név</label>
             <input type="text" name="name" id="name" required>
             <label for="email">Email</label>
             <input type="email" name="email" id="email" required>
-            <label for="message">Üzenet</label>
+            <label for="message" class="lang" key="FORM_MESSAGE">Üzenet</label>
             <textarea name="message" id="message" required></textarea>
             <input type="hidden" name="redirect" value="https://web3forms.com/success">
-            <button type="submit">Elküld</button>
+            <button type="submit" class="lang" key="FORM_BUTTON">Elküld</button>
           </form>
         </div>
       </div>
@@ -223,9 +258,9 @@
       <div class='bubble'></div>
     </section>
   </main>
-  
+
   <footer>
-    <h3>Itt vagyok még megtalálható</h3>
+    <h3 class="lang" key="FOOTER_TITLE">Itt vagyok még megtalálható</h3>
     <div>
       <a href="https://linkedin.com/in/zoltán-parragi-4409a527b
       " target="_blank">
